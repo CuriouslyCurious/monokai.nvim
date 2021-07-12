@@ -62,6 +62,60 @@ M.pro = {
     none = 'NONE'
 }
 
+M.material = {
+    name = 'monokai_material',
+    base1 = '#1F292D',
+    base2 = '#232E33',
+    base3 = '#263238',
+    base4 = '#2D2E27',
+    base5 = '#383a3e',
+    base6 = '#575b61',
+    base7 = '#3F565F',
+    border = '#506E79',
+    brown = '#504945',
+    white = '#CDD3DE',
+    pink = '#FC3488',
+    green = '#A6E22E',
+    aqua = '#66d9ef',
+    yellow = '#E6DB74',
+    orange = '#FD9720',
+    purple = '#ae81ff',
+    red = '#e73c50',
+    diff_add_fg = '#d7ffaf',
+    diff_add_bg = '#5f875f',
+    diff_remove_fg = '#5f0000',
+    diff_remove_bg = '#f75f5f',
+    diff_change_fg = '#d7d7ff',
+    diff_change_bg = '#5f5f87',
+    none = 'NONE'
+}
+
+--let s:addfg       = { "gui": "#d7ffaf", "cterm": "193" }
+--let s:addbg       = { "gui": "#5f875f", "cterm": "65" }
+--let s:delbg       = { "gui": "#f75f5f", "cterm": "167" }
+--let s:changefg    = { "gui": "#d7d7ff", "cterm": "189" }
+--let s:changebg    = { "gui": "#5f5f87", "cterm": "60" }
+
+
+--let s:darkblack   = { "gui": "", "cterm": "233" }
+--let s:black       = { "gui": "#263238", "cterm": "235" }
+--let s:lightblack  = { "gui": "#2D2E27", "cterm": "234" }
+--let s:lightblack2 = { "gui": "#383a3e", "cterm": "236" }
+--let s:grey        = { "gui": "#3F565F", "cterm": "238" }
+--let s:lightgrey   = { "gui": "#575b61", "cterm": "241" }
+--let s:darkgrey    = { "gui": "", "cterm": "236" }
+--let s:coolgrey    = { "gui": "#506E79", "cterm": "241" }
+
+--let s:pink        = { "gui": "#FC3488", "cterm": "197" }
+--let s:green       = { "gui": "#A6E22E", "cterm": "148" }
+--let s:aqua        = { "gui": "#66d9ef", "cterm": "81" }
+--let s:blue        = { "gui": "#82B1FF", "cterm": "81" }
+--let s:yellow      = { "gui": "#E6DB74", "cterm": "186" }
+--let s:orange      = { "gui": "#FD9720", "cterm": "208" }
+--let s:purple      = { "gui": "#ae81ff", "cterm": "141" }
+--let s:red         = { "gui": "#e73c50", "cterm": "196" }
+--let s:darkred     = { "gui": "#5f0000", "cterm": "52" }
+
 M.highlight = function(group, color)
     local style = color.style and 'gui=' .. color.style or 'gui=NONE'
     local fg = color.fg and 'guifg = ' .. color.fg or 'guifg = NONE'
